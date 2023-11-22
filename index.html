@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    <title>FC Jou Jou</title>
+    <link rel="icon" type="" href="logo.png">
+</head>
+<body>
+
+    <div class="modal-background" onclick="toggleModal()"></div>
+
+    <div class="modal">
+        <h2>Jäsenet</h2>
+        <p>
+            
+        </p>
+    </div>
+
+    <script>
+        const toggleModal = () =>{
+            const bodyClassList = document.body.classList;
+            if(bodyClassList.contains("open")){
+                bodyClassList.remove("open");
+                bodyClassList.add("closed");
+            }else{
+                bodyClassList.remove("closed");
+                bodyClassList.add("open");
+            }
+        }
+    </script>
+
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title">FC Jou Jou</h1>
+        <nav class="navbar-menu">
+            <h1>Since of 2020</h1>
+            <button onclick="toggleModal()" type="button">Näytä Jäsenet</button>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <button onclick="toggleModal()" type="button">Sana Kirja</button>
+            <a
+                href="/Fc/"
+                download="Fc.zip">
+                DownLoad
+        </a>
+        </nav>
+
+    </nav>
+
+    <script type="text/javascript">
+        const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+
+
+    <div class="container">
+        <img src="logo.png">
+        <p id="info"><span>
+            
+            Tervetuloa FC Jou Jou:n virallisille nettisivuille!
+
+            FC Jou Jou on nykyisen Postipuun Koulun 5A luokan omistuksessa.           
+                       
+            Hyvät pelaajat, kannattajat ja jalkapalloystävät,
+            
+            On suuri ilo toivottaa teidät tervetulleeksi FC Jou Jou:n virallisille nettisivuille. Tämä on paikka, jossa jaamme yhteisen intohimomme jalkapalloon, juhlimme voittoja ja jaamme yhdessä matkamme ilot ja haasteet.
+            
+            FC Jou Jou ei ole pelkkä jalkapallojoukkue – olemme perhe. Vuonna 2020 perustettuna olemme tehneet tiivistä yhteistyötä ja kasvaneet yhdessä. Meitä yhdistää enemmän kuin vain peli kentällä; jaamme yhteiset tavoitteet, unelmat ja sitoutumisen menestykseen.
+            
+            Jalkapallo on enemmän kuin vain 90 minuuttia kentällä – se on yhteisöllisyyttä, ystävyyksiä ja intohimon jakamista.
+            
+            Tutustukaa pelaajiimme, valmentajiimme ja koko tiimiimme. Meitä yhdistää vahva yhteishenki ja sitoutuminen kasvuun sekä yksilöinä että joukkueena. Yhdessä pyrimme kohti huippua ja luomme jatkuvasti muistoja, jotka säilyvät ikuisesti.
+            
+            Yhteistyössä voimme tehdä suuria asioita niin kentällä kuin sen ulkopuolellakin.
+            
+            Lopuksi, haluamme kiittää teitä, arvoisat kannattajat, tuesta ja uskollisuudesta. Te olette voimamme ja inspiraatiomme. Yhdessä luomme unohtumattomia hetkiä ja viemme FC Jou Jou:n uusille huipuille.
+            
+            Kiitos vierailusta nettisivuillamme. Toivomme, että nautitte selaamisesta ja liitytte joukkoomme seuraamaan jalkapallon taikaa.
+            
+            Jalkapallon iloa ja yhdessäoloa,
+            
+            FC Jou Jou
+
+
+            
+        </span></p>
+    </div>
+
+
+    
+</body>
+</html
